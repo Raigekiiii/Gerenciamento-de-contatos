@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.contatos.controller.ContatoController">
+   <children>
+      <Label layoutX="70.0" prefHeight="46.0" prefWidth="161.0" text="CONTATOS">
+         <font>
+            <Font size="31.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNome" layoutX="53.0" layoutY="54.0" prefHeight="45.0" prefWidth="190.0" promptText="Nome">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="txtTel" layoutX="53.0" layoutY="106.0" prefHeight="45.0" prefWidth="190.0" promptText="Telefone">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <Button fx:id="btn" layoutX="91.0" layoutY="155.0" mnemonicParsing="false" onAction="#inserirContato" prefHeight="45.0" prefWidth="101.0" text="Inserir">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <ListView fx:id="lstcontatos" layoutX="31.0" layoutY="218.0" prefHeight="182.0" prefWidth="240.0" />
+   </children>
+</AnchorPane>
